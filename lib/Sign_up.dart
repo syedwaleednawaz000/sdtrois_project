@@ -52,18 +52,21 @@ class _Sign_upState extends State<Sign_up> {
         setState(() {
 
         });
+        Get.back();
       } else {
         print('Error posting data: ${response.reasonPhrase}');
         loading = false;
         setState(() {
 
         });
+        Get.back();
       }
     }catch(error){
       loading = false;
       setState(() {
       });
       print("this is cathcmethid error ");
+      Get.back();
     }
 
   }
@@ -208,6 +211,7 @@ class _Sign_upState extends State<Sign_up> {
               GestureDetector(
                 onTap: (){
                   singUp();
+
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -218,7 +222,7 @@ class _Sign_upState extends State<Sign_up> {
                       color: Colors.purpleAccent,
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Center(child: loading ?  CircularProgressIndicator(): Text('Sign up',style: TextStyle(fontSize: 20),)),
+                    child: Center(child: loading ?  CircularProgressIndicator(): Text('Sign up',style: TextStyle(color: Colors.white,fontSize: 20),)),
                   ),
                 ),
               ),

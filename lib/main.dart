@@ -1,11 +1,10 @@
 
 import 'package:client_project/Sign_in.dart';
 import 'package:client_project/Sign_up.dart';
-import 'package:client_project/practice.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() => runApp(MyApp());
